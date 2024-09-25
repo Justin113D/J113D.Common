@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Text.Json;
 
-namespace J113D.Common.JSON
+namespace J113D.Common.Json
 {
     /// <summary>
     /// Simplified read and write calls for 

@@ -1,4 +1,4 @@
-﻿namespace J113D.Common.JSON
+﻿namespace J113D.Common.Json
 {
     /// <summary>
     /// Property definition information
