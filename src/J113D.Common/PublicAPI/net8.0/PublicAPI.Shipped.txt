@@ -1,1 +1,90 @@
 ﻿#nullable enable
+abstract J113D.Common.BaseSettings.ConvertValue(string! name, System.Text.Json.JsonElement value) -> object!
+abstract J113D.Common.BaseSettings.Reset() -> void
+abstract J113D.Common.Json.JsonObjectConverter<T>.CreateRaw(ref J113D.Common.Json.JsonObjectReaderInstance readerInstance) -> T
+abstract J113D.Common.Json.JsonObjectConverter<T>.PropertyDefinitions.get -> System.Collections.ObjectModel.ReadOnlyDictionary<string!, J113D.Common.Json.PropertyDefinition>!
+abstract J113D.Common.Json.JsonObjectConverter<T>.ReadValueRaw(ref System.Text.Json.Utf8JsonReader reader, ref J113D.Common.Json.JsonObjectReaderInstance readerInstance, string! propertyName, System.Text.Json.JsonSerializerOptions! options) -> object?
+abstract J113D.Common.Json.JsonObjectConverter<T>.WriteValues(System.Text.Json.Utf8JsonWriter! writer, T value, System.Text.Json.JsonSerializerOptions! options) -> void
+abstract J113D.Common.Json.SimpleJsonObjectConverter<T>.Create(System.Collections.ObjectModel.ReadOnlyDictionary<string!, object?>! values) -> T
+abstract J113D.Common.Json.SimpleJsonObjectConverter<T>.ReadValue(ref System.Text.Json.Utf8JsonReader reader, string! propertyName, System.Collections.ObjectModel.ReadOnlyDictionary<string!, object?>! values, System.Text.Json.JsonSerializerOptions! options) -> object?
+HEIO.NET.DistinctMap
+HEIO.NET.DistinctMap.GetValue(int absoluteIndex) -> object?
+HEIO.NET.DistinctMap.Map.get -> int[]?
+HEIO.NET.DistinctMap.this[int absoluteIndex].get -> int
+HEIO.NET.DistinctMap.this[short absoluteIndex].get -> short
+HEIO.NET.DistinctMap.this[uint absoluteIndex].get -> uint
+HEIO.NET.DistinctMap.this[ushort absoluteIndex].get -> ushort
+HEIO.NET.DistinctMap.Values.get -> System.Collections.IList!
+HEIO.NET.DistinctMap<T>
+HEIO.NET.DistinctMap<T>.DistinctMap(System.Collections.Generic.IList<T>! values, int[]? map) -> void
+HEIO.NET.DistinctMap<T>.GetValue(int absoluteIndex) -> T
+HEIO.NET.DistinctMap<T>.ValueArray.get -> T[]!
+HEIO.NET.DistinctMap<T>.Values.get -> System.Collections.Generic.IList<T>!
+HEIO.NET.DistinctMapExtensions
+J113D.Common.BaseSettings
+J113D.Common.BaseSettings.BaseSettings() -> void
+J113D.Common.BaseSettings.Load() -> void
+J113D.Common.BaseSettings.Save() -> void
+J113D.Common.BaseSettings.this[string! name].get -> object!
+J113D.Common.BaseSettings.this[string! name].set -> void
+J113D.Common.GenericHelper
+J113D.Common.Json.InvalidPropertyException
+J113D.Common.Json.InvalidPropertyException.InvalidPropertyException() -> void
+J113D.Common.Json.JsonObjectConverter<T>
+J113D.Common.Json.JsonObjectConverter<T>.JsonObjectConverter() -> void
+J113D.Common.Json.JsonObjectReaderInstance
+J113D.Common.Json.JsonObjectReaderInstance.AddPropertyDefinitions(System.Collections.ObjectModel.ReadOnlyDictionary<string!, J113D.Common.Json.PropertyDefinition>! propertyDefinitions) -> void
+J113D.Common.Json.JsonObjectReaderInstance.CurrentPropertyDefinitions.get -> System.Collections.ObjectModel.ReadOnlyDictionary<string!, J113D.Common.Json.PropertyDefinition>!
+J113D.Common.Json.JsonObjectReaderInstance.JsonObjectReaderInstance() -> void
+J113D.Common.Json.JsonObjectReaderInstance.JsonObjectReaderInstance(System.Collections.ObjectModel.ReadOnlyDictionary<string!, J113D.Common.Json.PropertyDefinition>! propertyDefinitions, System.Collections.Generic.Dictionary<string!, object?>! values) -> void
+J113D.Common.Json.JsonObjectReaderInstance.Values.get -> System.Collections.ObjectModel.ReadOnlyDictionary<string!, object?>!
+J113D.Common.Json.PropertyDefinition
+J113D.Common.Json.PropertyDefinition.Default.get -> object?
+J113D.Common.Json.PropertyDefinition.Nullable.get -> bool
+J113D.Common.Json.PropertyDefinition.PropertyDefinition() -> void
+J113D.Common.Json.PropertyDefinition.PropertyDefinition(J113D.Common.Json.PropertyTokenType type, object? fallback) -> void
+J113D.Common.Json.PropertyDefinition.PropertyDefinition(J113D.Common.Json.PropertyTokenType type, object? fallback, bool nullable) -> void
+J113D.Common.Json.PropertyDefinition.Type.get -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.Any = J113D.Common.Json.PropertyTokenType.Bool | J113D.Common.Json.PropertyTokenType.Number | J113D.Common.Json.PropertyTokenType.Object | J113D.Common.Json.PropertyTokenType.Array | J113D.Common.Json.PropertyTokenType.String -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.Array = 8 -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.Bool = 1 -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.Number = 2 -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.Object = 4 -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.PropertyTokenType.String = 16 -> J113D.Common.Json.PropertyTokenType
+J113D.Common.Json.SimpleJsonObjectConverter<T>
+J113D.Common.Json.SimpleJsonObjectConverter<T>.SimpleJsonObjectConverter() -> void
+J113D.Common.ReadOnlyList<T>
+J113D.Common.ReadOnlyList<T>.Count.get -> int
+J113D.Common.ReadOnlyList<T>.GetEnumerator() -> System.Collections.Generic.IEnumerator<T>!
+J113D.Common.ReadOnlyList<T>.ReadOnlyList(System.Collections.Generic.IReadOnlyList<T>! list) -> void
+J113D.Common.ReadOnlyList<T>.this[int index].get -> T
+J113D.Common.ReadOnlySet<T>
+J113D.Common.ReadOnlySet<T>.Contains(T item) -> bool
+J113D.Common.ReadOnlySet<T>.Count.get -> int
+J113D.Common.ReadOnlySet<T>.GetEnumerator() -> System.Collections.Generic.IEnumerator<T>!
+J113D.Common.ReadOnlySet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.ReadOnlySet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.ReadOnlySet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.ReadOnlySet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.ReadOnlySet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.ReadOnlySet<T>.ReadOnlySet(System.Collections.Generic.IReadOnlySet<T>! set) -> void
+J113D.Common.ReadOnlySet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>! other) -> bool
+J113D.Common.StringHelper
+override J113D.Common.Json.SimpleJsonObjectConverter<T>.ReadValueRaw(ref System.Text.Json.Utf8JsonReader reader, ref J113D.Common.Json.JsonObjectReaderInstance readerInstance, string! propertyName, System.Text.Json.JsonSerializerOptions! options) -> object?
+override sealed J113D.Common.Json.JsonObjectConverter<T>.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> T?
+override sealed J113D.Common.Json.JsonObjectConverter<T>.Write(System.Text.Json.Utf8JsonWriter! writer, T value, System.Text.Json.JsonSerializerOptions! options) -> void
+override sealed J113D.Common.Json.SimpleJsonObjectConverter<T>.CreateRaw(ref J113D.Common.Json.JsonObjectReaderInstance readerInstance) -> T
+static HEIO.NET.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection) -> HEIO.NET.DistinctMap<T>!
+static HEIO.NET.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> HEIO.NET.DistinctMap<T>!
+static HEIO.NET.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, out HEIO.NET.DistinctMap<T>! map) -> bool
+static HEIO.NET.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out HEIO.NET.DistinctMap<T>! map) -> bool
+static HEIO.NET.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection) -> HEIO.NET.DistinctMap<T>!
+static HEIO.NET.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> HEIO.NET.DistinctMap<T>!
+static HEIO.NET.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, out HEIO.NET.DistinctMap<T>! map) -> bool
+static HEIO.NET.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out HEIO.NET.DistinctMap<T>! map) -> bool
+static J113D.Common.GenericHelper.FindNextFreeInteger<T>(this System.Collections.Generic.IDictionary<int, T>! dict, int key, bool allowNegative = false) -> int
+static J113D.Common.GenericHelper.FindNextFreeKey<T>(this System.Collections.Generic.IDictionary<string!, T>! dict, string! key, bool dictContainsOnlyLower = false) -> string!
+static J113D.Common.StringHelper.Escape(this string! value) -> string!
+static J113D.Common.StringHelper.Unescape(this string! value) -> string!
+virtual J113D.Common.Json.JsonObjectConverter<T>.ErrorOnUnknownProperty.get -> bool
