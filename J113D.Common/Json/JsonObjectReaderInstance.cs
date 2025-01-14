@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace J113D.Common.JSON
+namespace J113D.Common.Json
 {
     /// <summary>
     /// Json reader instance.

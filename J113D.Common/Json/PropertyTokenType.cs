@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace J113D.Common.JSON
+namespace J113D.Common.Json
 {
     /// <summary>
     /// Type of the property

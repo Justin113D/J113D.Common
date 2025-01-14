@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace J113D.Common.JSON
+namespace J113D.Common.Json
 {
     /// <summary>
     /// Template converter for json objects.
@@ -155,7 +155,7 @@ namespace J113D.Common.JSON
         /// Writes the properties within the 
         /// </summary>
         /// <param name="writer">The writer to write to</param>
-        /// <param name="value">The value to convert to JSON</param>
+        /// <param name="value">The value to convert to Json</param>
         /// <param name="options">An object that specifies serialization options to use</param>
         protected abstract void WriteValues(Utf8JsonWriter writer, T value, JsonSerializerOptions options);
     }
