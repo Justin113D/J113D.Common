@@ -7,20 +7,20 @@ abstract J113D.Common.Json.JsonObjectConverter<T>.ReadValueRaw(ref System.Text.J
 abstract J113D.Common.Json.JsonObjectConverter<T>.WriteValues(System.Text.Json.Utf8JsonWriter! writer, T value, System.Text.Json.JsonSerializerOptions! options) -> void
 abstract J113D.Common.Json.SimpleJsonObjectConverter<T>.Create(System.Collections.ObjectModel.ReadOnlyDictionary<string!, object?>! values) -> T
 abstract J113D.Common.Json.SimpleJsonObjectConverter<T>.ReadValue(ref System.Text.Json.Utf8JsonReader reader, string! propertyName, System.Collections.ObjectModel.ReadOnlyDictionary<string!, object?>! values, System.Text.Json.JsonSerializerOptions! options) -> object?
-HEIO.NET.DistinctMap
-HEIO.NET.DistinctMap.GetValue(int absoluteIndex) -> object?
-HEIO.NET.DistinctMap.Map.get -> int[]?
-HEIO.NET.DistinctMap.this[int absoluteIndex].get -> int
-HEIO.NET.DistinctMap.this[short absoluteIndex].get -> short
-HEIO.NET.DistinctMap.this[uint absoluteIndex].get -> uint
-HEIO.NET.DistinctMap.this[ushort absoluteIndex].get -> ushort
-HEIO.NET.DistinctMap.Values.get -> System.Collections.IList!
-HEIO.NET.DistinctMap<T>
-HEIO.NET.DistinctMap<T>.DistinctMap(System.Collections.Generic.IList<T>! values, int[]? map) -> void
-HEIO.NET.DistinctMap<T>.GetValue(int absoluteIndex) -> T
-HEIO.NET.DistinctMap<T>.ValueArray.get -> T[]!
-HEIO.NET.DistinctMap<T>.Values.get -> System.Collections.Generic.IList<T>!
-HEIO.NET.DistinctMapExtensions
+J113D.Common.DistinctMap
+J113D.Common.DistinctMap.GetValue(int absoluteIndex) -> object?
+J113D.Common.DistinctMap.Map.get -> int[]?
+J113D.Common.DistinctMap.this[int absoluteIndex].get -> int
+J113D.Common.DistinctMap.this[short absoluteIndex].get -> short
+J113D.Common.DistinctMap.this[uint absoluteIndex].get -> uint
+J113D.Common.DistinctMap.this[ushort absoluteIndex].get -> ushort
+J113D.Common.DistinctMap.Values.get -> System.Collections.IList!
+J113D.Common.DistinctMap<T>
+J113D.Common.DistinctMap<T>.DistinctMap(System.Collections.Generic.IList<T>! values, int[]? map) -> void
+J113D.Common.DistinctMap<T>.GetValue(int absoluteIndex) -> T
+J113D.Common.DistinctMap<T>.ValueArray.get -> T[]!
+J113D.Common.DistinctMap<T>.Values.get -> System.Collections.Generic.IList<T>!
+J113D.Common.DistinctMapExtensions
 J113D.Common.BaseSettings
 J113D.Common.BaseSettings.BaseSettings() -> void
 J113D.Common.BaseSettings.Load() -> void
@@ -75,14 +75,14 @@ override J113D.Common.Json.SimpleJsonObjectConverter<T>.ReadValueRaw(ref System.
 override sealed J113D.Common.Json.JsonObjectConverter<T>.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> T?
 override sealed J113D.Common.Json.JsonObjectConverter<T>.Write(System.Text.Json.Utf8JsonWriter! writer, T value, System.Text.Json.JsonSerializerOptions! options) -> void
 override sealed J113D.Common.Json.SimpleJsonObjectConverter<T>.CreateRaw(ref J113D.Common.Json.JsonObjectReaderInstance readerInstance) -> T
-static HEIO.NET.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection) -> HEIO.NET.DistinctMap<T>!
-static HEIO.NET.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> HEIO.NET.DistinctMap<T>!
-static HEIO.NET.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, out HEIO.NET.DistinctMap<T>! map) -> bool
-static HEIO.NET.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out HEIO.NET.DistinctMap<T>! map) -> bool
-static HEIO.NET.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection) -> HEIO.NET.DistinctMap<T>!
-static HEIO.NET.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> HEIO.NET.DistinctMap<T>!
-static HEIO.NET.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, out HEIO.NET.DistinctMap<T>! map) -> bool
-static HEIO.NET.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out HEIO.NET.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMap.CreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMap.TryCreateDistinctMap<T>(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMapExtensions.CreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMapExtensions.TryCreateDistinctMap<T>(this System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out J113D.Common.DistinctMap<T>! map) -> bool
 static J113D.Common.GenericHelper.FindNextFreeInteger<T>(this System.Collections.Generic.IDictionary<int, T>! dict, int key, bool allowNegative = false) -> int
 static J113D.Common.GenericHelper.FindNextFreeKey<T>(this System.Collections.Generic.IDictionary<string!, T>! dict, string! key, bool dictContainsOnlyLower = false) -> string!
 static J113D.Common.StringHelper.Escape(this string! value) -> string!

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace HEIO.NET
+namespace J113D.Common
 {
 	/// <summary>
 	/// A distinct index to value mapping.
