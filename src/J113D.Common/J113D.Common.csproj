@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../J113D.ProjectConfigurations/NuGet.Build.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>J113D.Common</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>J113D Common Library</Title>
+		<Product>J113D Common Library</Product>
+		<Description>A collection of utilities or code i repeatedly use throught programs or other libraries.</Description>
+		<Version>0.0.1</Version>
+		<RepositoryUrl>https://github.com/Justin113D/J113D.Common</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Justin113D/J113D.Common</PackageProjectUrl>
+		<PackageId>J113D.Common</PackageId>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="PublicAPI\net8.0\PublicAPI.Shipped.txt" />
+	  <None Remove="PublicAPI\net8.0\PublicAPI.Unshipped.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../../README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
