@@ -19,13 +19,13 @@ jobs:
         submodules: 'recursive'
 
     - name: "Setup Library SDKs & Components"
-      uses: J113D/J113D.ProjectConfigurations/.github/actions/setup-sdks-components@main
+      uses: Justin113D/J113D.ProjectConfigurations/.github/actions/setup-sdks-components@main
 
     - name: Build
       run: dotnet build -c Release ./src
 
     - name: "Upload Packages"
-      uses: J113D/J113D.ProjectConfigurations/.github/actions/upload-packages@main
+      uses: Justin113D/J113D.ProjectConfigurations/.github/actions/upload-packages@main
       with:
         nuget-key: ${{ secrets.NUGET_KEY }}
         is-release: ${{ startsWith(github.ref, 'refs/tags/') }}
