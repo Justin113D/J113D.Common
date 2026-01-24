@@ -1,1 +1,19 @@
-﻿
+﻿J113D.Common.DistinctMap<T>.Map.get -> int[]?
+J113D.Common.DistinctMap<T>.this[int absoluteIndex].get -> int
+J113D.Common.DistinctMap<T>.this[short absoluteIndex].get -> short
+J113D.Common.DistinctMap<T>.this[uint absoluteIndex].get -> uint
+J113D.Common.DistinctMap<T>.this[ushort absoluteIndex].get -> ushort
+J113D.Common.IDistinctMap
+J113D.Common.IDistinctMap.GetValue(int absoluteIndex) -> object?
+J113D.Common.IDistinctMap.Map.get -> int[]?
+J113D.Common.IDistinctMap.this[int absoluteIndex].get -> int
+J113D.Common.IDistinctMap.this[short absoluteIndex].get -> short
+J113D.Common.IDistinctMap.this[uint absoluteIndex].get -> uint
+J113D.Common.IDistinctMap.this[ushort absoluteIndex].get -> ushort
+J113D.Common.IDistinctMap.Values.get -> System.Collections.IList!
+static J113D.Common.DistinctMap<T>.TryCreateDistinctMap(System.Collections.Generic.IList<T>! collection, System.Collections.Generic.EqualityComparer<T>! comparer, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMap<T>.TryCreateDistinctMapSSP<S>(System.Collections.Generic.IList<T>! collection, System.Func<T, S>! getSSPValue, S sspDelta, System.Collections.Generic.EqualityComparer<T>! comparer, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMapExtensions.CreateDistinctMapSSP<T, S>(this System.Collections.Generic.IList<T>! collection, System.Func<T, S>! getSSPValue, S sspDelta) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMapExtensions.CreateDistinctMapSSP<T, S>(this System.Collections.Generic.IList<T>! collection, System.Func<T, S>! getSSPValue, S sspDelta, System.Collections.Generic.EqualityComparer<T>! comparer) -> J113D.Common.DistinctMap<T>!
+static J113D.Common.DistinctMapExtensions.TryCreateDistinctMapSSP<T, S>(this System.Collections.Generic.IList<T>! collection, System.Func<T, S>! getSSPValue, S sspDelta, out J113D.Common.DistinctMap<T>! map) -> bool
+static J113D.Common.DistinctMapExtensions.TryCreateDistinctMapSSP<T, S>(this System.Collections.Generic.IList<T>! collection, System.Func<T, S>! getSSPValue, S sspDelta, System.Collections.Generic.EqualityComparer<T>! comparer, out J113D.Common.DistinctMap<T>! map) -> bool
