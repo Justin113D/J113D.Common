@@ -50,7 +50,7 @@ namespace J113D.Common
 		{
 			_values = [];
 
-			string filepath;
+			string filepath = ".";
 			if(RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 			{
 				filepath = _windowsPath;
@@ -62,10 +62,6 @@ namespace J113D.Common
 			else if(RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
 			{
 				filepath = _macosPath;
-			}
-			else
-			{
-				filepath = ".";
 			}
 
 			Assembly assembly = Assembly.GetEntryAssembly()!;
